@@ -1,0 +1,153 @@
+:root{
+    --whiteC: white;
+    --grayC : #f0f0f0;
+    --oliveC: #596D48;
+    --darkerOliveC: #445d39;
+    --oliveCWithTransparency: rgba(89, 109, 72, 0.5);
+    background-color: var(--grayC);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+.logoHeading {
+    margin-top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    background-color: var(--oliveCWithTransparency);
+}
+
+.logo {
+    height: 50%;
+    margin-right: 10px; 
+}
+
+.logoHeading h1 {
+    color: var(--whiteC);
+}
+
+.col-6{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.formBox{
+    background-color: var(--whiteC);
+        padding-left: 5%;
+        padding-right: 30%;
+        padding-block: 30px;
+}
+
+.headingBox{
+    margin-block: 50px;
+    width: 70%;
+    padding-left: 5%;
+}
+
+.imgContainer {
+    flex: 0 0 30%;
+    background-image: url('nature.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    flex: 1; 
+}
+
+.content form{
+    width: 100%;
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 5%;
+    background-color: var(--oliveC);
+    border: none;
+    border-radius: 10px;
+    color: var(--whiteC);
+    padding-inline: 40px;
+    padding-block: 10px;
+    margin-block: 40px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+    background-color: var(--darkerOliveC);
+}
+
+.logInText{
+    padding-left: 5%;
+}
+
+.logInLink{
+    color: var(--oliveC);
+    text-decoration: none;
+}
+
+.logInLink:hover {
+    color: var(--darkerOliveC);
+}
+
+
+
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #E5E7EB; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    font-size: 16px; 
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: var(--oliveC); 
+}
+
+input:focus {
+    border: 2px solid var(--oliveC);
+    box-shadow: 0 0 5px var(--oliveC); /* Subtle blue shadow */
+}
+
+input.error {
+    border: 2px solid red;
+}
